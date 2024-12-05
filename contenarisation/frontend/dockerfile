@@ -1,4 +1,7 @@
+FROM nginx:1.27.3-alpine-slim
+
 COPY index.html /usr/share/nginx/html/
 
 # Si vous avez d'autres fichiers ou dossier, copier les également
-COPY ./img /usr/share/nginx/html
+
+EXPOSE 80
